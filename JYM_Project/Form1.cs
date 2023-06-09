@@ -26,5 +26,22 @@ namespace JYM_Project
         {
 
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            if(UserNameTextBox.Text != "" && PasswordTextBox.Text != "" && RoleComboBox.Text != "")
+            {
+                MessageBox.Show("Congratulations! Your Data is sent");
+            }
+            else
+            {
+                MessageBox.Show("Please fill all input Fields ");
+            }
+        }
     }
 }
