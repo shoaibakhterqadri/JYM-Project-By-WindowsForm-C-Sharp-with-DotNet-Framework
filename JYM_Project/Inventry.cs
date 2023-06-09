@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace JYM_Project
 {
-    public partial class Manage : Form
+    public partial class Inventry : Form
     {
-        public Manage()
+        public Inventry()
         {
             InitializeComponent();
-        }
-
-        private void ManageGroupBox_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -37,6 +37,9 @@ namespace JYM_Project
             if(UserNameTextBox.Text != "" && PasswordTextBox.Text != "" && RoleComboBox.Text != "")
             {
                 MessageBox.Show("Congratulations! Your Data is sent");
+                Manage ManageForm = new Manage();
+                ManageForm.Show();
+                
             }
             else
             {
