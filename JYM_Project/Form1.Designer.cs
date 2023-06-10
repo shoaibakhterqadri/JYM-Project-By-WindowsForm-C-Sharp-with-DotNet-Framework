@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.LoginFormGroup = new System.Windows.Forms.GroupBox();
+            this.loginButton = new System.Windows.Forms.Button();
             this.RoleComboBox = new System.Windows.Forms.ComboBox();
             this.PasswordTextBox = new System.Windows.Forms.TextBox();
             this.UserNameTextBox = new System.Windows.Forms.TextBox();
@@ -36,7 +37,6 @@
             this.RoleLabel = new System.Windows.Forms.Label();
             this.PasswordLabel = new System.Windows.Forms.Label();
             this.userNameLabel = new System.Windows.Forms.Label();
-            this.loginButton = new System.Windows.Forms.Button();
             this.LoginFormGroup.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +58,19 @@
             this.LoginFormGroup.TabStop = false;
             this.LoginFormGroup.Text = "GYM Project";
             this.LoginFormGroup.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // loginButton
+            // 
+            this.loginButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.loginButton.Location = new System.Drawing.Point(235, 300);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Size = new System.Drawing.Size(148, 45);
+            this.loginButton.TabIndex = 7;
+            this.loginButton.Text = "Login";
+            this.loginButton.UseVisualStyleBackColor = false;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // RoleComboBox
             // 
@@ -137,19 +150,6 @@
             this.userNameLabel.Size = new System.Drawing.Size(152, 32);
             this.userNameLabel.TabIndex = 0;
             this.userNameLabel.Text = "User Name:";
-            // 
-            // loginButton
-            // 
-            this.loginButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.loginButton.Location = new System.Drawing.Point(235, 300);
-            this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(148, 45);
-            this.loginButton.TabIndex = 7;
-            this.loginButton.Text = "Login";
-            this.loginButton.UseVisualStyleBackColor = false;
-            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // LoginForm
             // 

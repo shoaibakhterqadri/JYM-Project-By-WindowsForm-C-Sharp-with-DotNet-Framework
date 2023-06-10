@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.ManageGroupBox = new System.Windows.Forms.GroupBox();
-            this.trainerButton = new System.Windows.Forms.Button();
-            this.dealButton = new System.Windows.Forms.Button();
-            this.inventryButton = new System.Windows.Forms.Button();
-            this.maintainerButton = new System.Windows.Forms.Button();
             this.mangaeLabel = new System.Windows.Forms.Label();
+            this.venderButton = new System.Windows.Forms.Button();
+            this.inventryButton = new System.Windows.Forms.Button();
+            this.dealButton = new System.Windows.Forms.Button();
+            this.trainerButton = new System.Windows.Forms.Button();
             this.ManageGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,7 +41,7 @@
             // 
             this.ManageGroupBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ManageGroupBox.Controls.Add(this.mangaeLabel);
-            this.ManageGroupBox.Controls.Add(this.maintainerButton);
+            this.ManageGroupBox.Controls.Add(this.venderButton);
             this.ManageGroupBox.Controls.Add(this.inventryButton);
             this.ManageGroupBox.Controls.Add(this.dealButton);
             this.ManageGroupBox.Controls.Add(this.trainerButton);
@@ -53,29 +53,32 @@
             this.ManageGroupBox.Text = "Manage";
             this.ManageGroupBox.Enter += new System.EventHandler(this.ManageGroupBox_Enter);
             // 
-            // trainerButton
+            // mangaeLabel
             // 
-            this.trainerButton.BackColor = System.Drawing.SystemColors.Highlight;
-            this.trainerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.trainerButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.trainerButton.Location = new System.Drawing.Point(34, 40);
-            this.trainerButton.Name = "trainerButton";
-            this.trainerButton.Size = new System.Drawing.Size(183, 76);
-            this.trainerButton.TabIndex = 0;
-            this.trainerButton.Text = "Trainer";
-            this.trainerButton.UseVisualStyleBackColor = false;
+            this.mangaeLabel.AllowDrop = true;
+            this.mangaeLabel.AutoSize = true;
+            this.mangaeLabel.BackColor = System.Drawing.Color.DodgerBlue;
+            this.mangaeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mangaeLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.mangaeLabel.Location = new System.Drawing.Point(237, 129);
+            this.mangaeLabel.Name = "mangaeLabel";
+            this.mangaeLabel.Padding = new System.Windows.Forms.Padding(35);
+            this.mangaeLabel.Size = new System.Drawing.Size(210, 108);
+            this.mangaeLabel.TabIndex = 7;
+            this.mangaeLabel.Text = "Manage";
             // 
-            // dealButton
+            // venderButton
             // 
-            this.dealButton.BackColor = System.Drawing.SystemColors.Highlight;
-            this.dealButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dealButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dealButton.Location = new System.Drawing.Point(34, 263);
-            this.dealButton.Name = "dealButton";
-            this.dealButton.Size = new System.Drawing.Size(183, 76);
-            this.dealButton.TabIndex = 4;
-            this.dealButton.Text = "Deals Section";
-            this.dealButton.UseVisualStyleBackColor = false;
+            this.venderButton.BackColor = System.Drawing.SystemColors.Highlight;
+            this.venderButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.venderButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.venderButton.Location = new System.Drawing.Point(471, 40);
+            this.venderButton.Name = "venderButton";
+            this.venderButton.Size = new System.Drawing.Size(183, 76);
+            this.venderButton.TabIndex = 6;
+            this.venderButton.Text = "Vender";
+            this.venderButton.UseVisualStyleBackColor = false;
+            this.venderButton.Click += new System.EventHandler(this.maintainerButton_Click);
             // 
             // inventryButton
             // 
@@ -88,32 +91,33 @@
             this.inventryButton.TabIndex = 5;
             this.inventryButton.Text = "Inventry";
             this.inventryButton.UseVisualStyleBackColor = false;
+            this.inventryButton.Click += new System.EventHandler(this.inventryButton_Click);
             // 
-            // maintainerButton
+            // dealButton
             // 
-            this.maintainerButton.BackColor = System.Drawing.SystemColors.Highlight;
-            this.maintainerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maintainerButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.maintainerButton.Location = new System.Drawing.Point(471, 40);
-            this.maintainerButton.Name = "maintainerButton";
-            this.maintainerButton.Size = new System.Drawing.Size(183, 76);
-            this.maintainerButton.TabIndex = 6;
-            this.maintainerButton.Text = "Maintainer";
-            this.maintainerButton.UseVisualStyleBackColor = false;
+            this.dealButton.BackColor = System.Drawing.SystemColors.Highlight;
+            this.dealButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dealButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dealButton.Location = new System.Drawing.Point(34, 263);
+            this.dealButton.Name = "dealButton";
+            this.dealButton.Size = new System.Drawing.Size(183, 76);
+            this.dealButton.TabIndex = 4;
+            this.dealButton.Text = "Deals Section";
+            this.dealButton.UseVisualStyleBackColor = false;
+            this.dealButton.Click += new System.EventHandler(this.dealButton_Click);
             // 
-            // mangaeLabel
+            // trainerButton
             // 
-            this.mangaeLabel.AllowDrop = true;
-            this.mangaeLabel.AutoSize = true;
-            this.mangaeLabel.BackColor = System.Drawing.Color.DodgerBlue;
-            this.mangaeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mangaeLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.mangaeLabel.Location = new System.Drawing.Point(237, 129);
-            this.mangaeLabel.Name = "mangaeLabel";
-            this.mangaeLabel.Padding = new System.Windows.Forms.Padding(35);
-            this.mangaeLabel.Size = new System.Drawing.Size(216, 109);
-            this.mangaeLabel.TabIndex = 7;
-            this.mangaeLabel.Text = "Manage";
+            this.trainerButton.BackColor = System.Drawing.SystemColors.Highlight;
+            this.trainerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trainerButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.trainerButton.Location = new System.Drawing.Point(34, 40);
+            this.trainerButton.Name = "trainerButton";
+            this.trainerButton.Size = new System.Drawing.Size(183, 76);
+            this.trainerButton.TabIndex = 0;
+            this.trainerButton.Text = "Trainer";
+            this.trainerButton.UseVisualStyleBackColor = false;
+            this.trainerButton.Click += new System.EventHandler(this.trainerButton_Click);
             // 
             // Manage
             // 
@@ -135,7 +139,7 @@
 
         private System.Windows.Forms.GroupBox ManageGroupBox;
         private System.Windows.Forms.Button trainerButton;
-        private System.Windows.Forms.Button maintainerButton;
+        private System.Windows.Forms.Button venderButton;
         private System.Windows.Forms.Button inventryButton;
         private System.Windows.Forms.Button dealButton;
         private System.Windows.Forms.Label mangaeLabel;

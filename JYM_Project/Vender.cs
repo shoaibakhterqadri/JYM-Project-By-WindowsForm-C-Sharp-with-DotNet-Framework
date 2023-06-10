@@ -10,18 +10,23 @@ using System.Windows.Forms;
 
 namespace JYM_Project
 {
-    public partial class DealSection : Form
+    public partial class Vender : Form
     {
-        public DealSection()
+        public Vender()
         {
             InitializeComponent();
         }
 
+        private void venderNameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void addButton_Click(object sender, EventArgs e)
         {
-            if (memberShipNameTextBox.Text != "")
+            if (venderNameTextBox.Text != "" && emailTextBox.Text != "" && contactNumberTextBox.Text != "")
             {
-                MessageBox.Show("Congratulations! The Data is Added");
+                MessageBox.Show("Congratulations! The Data is added");  
             }
             else
             {
@@ -31,9 +36,9 @@ namespace JYM_Project
 
         private void updateButton_Click(object sender, EventArgs e)
         {
-            if (memberShipNameTextBox.Text != "")
+            if (venderNameTextBox.Text != "" && emailTextBox.Text != "" && contactNumberTextBox.Text != "")
             {
-                MessageBox.Show("Congratulations! The Data is Updated");
+                MessageBox.Show("Congratulations! The Data is updated");
             }
             else
             {
@@ -43,7 +48,7 @@ namespace JYM_Project
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            if (memberShipNameTextBox.Text != "")
+            if (venderNameTextBox.Text != "" && emailTextBox.Text != "" && contactNumberTextBox.Text != "")
             {
                 MessageBox.Show("Congratulations! The Data is deleted");
             }
