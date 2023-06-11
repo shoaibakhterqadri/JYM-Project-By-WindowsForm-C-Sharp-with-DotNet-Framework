@@ -37,12 +37,14 @@
             this.RoleLabel = new System.Windows.Forms.Label();
             this.PasswordLabel = new System.Windows.Forms.Label();
             this.userNameLabel = new System.Windows.Forms.Label();
+            this.signupLinkLabel1 = new System.Windows.Forms.LinkLabel();
             this.LoginFormGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // LoginFormGroup
             // 
             this.LoginFormGroup.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.LoginFormGroup.Controls.Add(this.signupLinkLabel1);
             this.LoginFormGroup.Controls.Add(this.loginButton);
             this.LoginFormGroup.Controls.Add(this.RoleComboBox);
             this.LoginFormGroup.Controls.Add(this.PasswordTextBox);
@@ -84,7 +86,7 @@
             "User",
             "Trainer",
             "Maintainer"});
-            this.RoleComboBox.Location = new System.Drawing.Point(278, 227);
+            this.RoleComboBox.Location = new System.Drawing.Point(278, 219);
             this.RoleComboBox.Name = "RoleComboBox";
             this.RoleComboBox.Size = new System.Drawing.Size(270, 37);
             this.RoleComboBox.TabIndex = 6;
@@ -92,7 +94,7 @@
             // PasswordTextBox
             // 
             this.PasswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordTextBox.Location = new System.Drawing.Point(278, 175);
+            this.PasswordTextBox.Location = new System.Drawing.Point(278, 166);
             this.PasswordTextBox.Multiline = true;
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.Size = new System.Drawing.Size(270, 32);
@@ -102,7 +104,7 @@
             // UserNameTextBox
             // 
             this.UserNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserNameTextBox.Location = new System.Drawing.Point(278, 112);
+            this.UserNameTextBox.Location = new System.Drawing.Point(278, 111);
             this.UserNameTextBox.Multiline = true;
             this.UserNameTextBox.Name = "UserNameTextBox";
             this.UserNameTextBox.Size = new System.Drawing.Size(270, 32);
@@ -125,7 +127,7 @@
             // 
             this.RoleLabel.AutoSize = true;
             this.RoleLabel.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RoleLabel.Location = new System.Drawing.Point(82, 219);
+            this.RoleLabel.Location = new System.Drawing.Point(82, 224);
             this.RoleLabel.Name = "RoleLabel";
             this.RoleLabel.Size = new System.Drawing.Size(77, 32);
             this.RoleLabel.TabIndex = 2;
@@ -150,6 +152,17 @@
             this.userNameLabel.Size = new System.Drawing.Size(152, 32);
             this.userNameLabel.TabIndex = 0;
             this.userNameLabel.Text = "User Name:";
+            // 
+            // signupLinkLabel1
+            // 
+            this.signupLinkLabel1.AutoSize = true;
+            this.signupLinkLabel1.Location = new System.Drawing.Point(493, 272);
+            this.signupLinkLabel1.Name = "signupLinkLabel1";
+            this.signupLinkLabel1.Size = new System.Drawing.Size(55, 16);
+            this.signupLinkLabel1.TabIndex = 8;
+            this.signupLinkLabel1.TabStop = true;
+            this.signupLinkLabel1.Text = "Sign Up";
+            this.signupLinkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.signupLinkLabel1_LinkClicked);
             // 
             // LoginForm
             // 
@@ -178,6 +191,7 @@
         private System.Windows.Forms.TextBox PasswordTextBox;
         private System.Windows.Forms.ComboBox RoleComboBox;
         private System.Windows.Forms.Button loginButton;
+        private System.Windows.Forms.LinkLabel signupLinkLabel1;
     }
 }
 

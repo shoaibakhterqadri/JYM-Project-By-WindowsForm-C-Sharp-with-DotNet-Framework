@@ -46,5 +46,12 @@ namespace JYM_Project
                 MessageBox.Show("Please fill all input Fields ");
             }
         }
+
+        private void signupLinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Signup SignupForm = new Signup();
+
+            SignupForm.Show();
+        }
     }
 }
